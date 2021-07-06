@@ -61,8 +61,8 @@ class Dictionary {
     }
     generateUpdateForm() {
         return `<form id="update_word">
-                    <input id="update_word" type="text" placeholder="type EN word" required>
-                    <input id="update_word" type="text" placeholder="type LT word" required>
+                    <input id="upd_word" type="text" placeholder="type EN word" required>
+                    <input id="upd_word" type="text" placeholder="type LT word" required>
                     <button id="update_button" type="submit">Update</button>
                     <button id="cancel_button" type="reset">Cancel</button>
                 </form>`;
@@ -102,8 +102,8 @@ class Dictionary {
             localStorage.setItem(this.localStorageMemoKey, JSON.stringify(this.savedWords));
         })
         editDOM.addEventListener('click', () => {
-            //this.addFormDOM.classList.remove('hide');
-            //this.updateFormDOM.classList.add('hide');
+            this.addFormDOM.classList.add('hide');
+            this.updateFormDOM.classList.remove('hide');
             console.log('editing...', enWord, ltWord);
         })
     };
@@ -121,7 +121,7 @@ class Dictionary {
         this.buttonSaveDOM = document.getElementById('save');
 
         this.updateFormDOM = document.getElementById('update_word');
-        this.updateWordDOM = document.getElementById('update_word');
+        this.updateWordDOM = document.getElementById('upd_word');
         this.buttonUpdateDOM = document.getElementById('update_button');
         this.buttonCancelDOM = document.getElementById('update_cancel');
     }
@@ -156,8 +156,8 @@ class Dictionary {
         // grizti i pirmine forma
         /*this.buttonCancelDOM.addEventListener('click', (e) => {
             e.preventDefault();
-            this.addFormDOM.classList.add('hide');
-            this.updateFormDOM.classList.remove('hide');
+            this.addFormDOM.classList.remove('hide');
+            this.updateFormDOM.classList.add('hide');
             // redaguoju irasa
         })*/
     };
