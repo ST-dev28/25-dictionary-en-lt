@@ -7,7 +7,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  padding: 20px;
+  padding: 10px;
 }
 h1,
 h2 {
@@ -27,6 +27,7 @@ form {
 }
 .words {
   width: 800px;
+  max-width: 100%;
 }
 
 form.hide {
@@ -34,6 +35,7 @@ form.hide {
 }
 form > input {
   width: 40%;
+  min-width: 250px;
   font-size: 20px;
   line-height: 40px;
 }
@@ -44,7 +46,8 @@ form > button {
   cursor: pointer;
 }
 
-form > div {
+.memo {
+  /*min-width: 250px;*/
   width: 40%;
   border: 1px solid rgb(131, 131, 131);
   line-height: 40px;
