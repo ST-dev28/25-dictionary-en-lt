@@ -22,9 +22,10 @@ h2 {
 }
 form {
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
+  justify-content: left;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 10px;
   padding: 10px 10px;
   background-color: #fff;
   width: 1000px;
@@ -70,12 +71,22 @@ button.fa.fa-pencil {
 button.fa.fa-trash {
   background-color: rgb(248, 166, 133);
 }
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 @media (max-width: 640px) {
   .memory {
     flex-direction: column;
   }
+  .fa {
+    width: 35px;
+    height: 35px;
+  }
   .memo,
   input {
-    min-width: 300px;
+    min-width: 350px;
   }
 }
