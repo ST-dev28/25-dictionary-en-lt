@@ -3,6 +3,10 @@ body {
 }
 
 .dic {
+  background-image: url(../img/blured.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,6 +28,7 @@ form {
   padding: 10px 10px;
   background-color: #fff;
   width: 100%;
+  background: transparent;
 }
 .words {
   width: 800px;
@@ -40,10 +45,13 @@ form > input {
   line-height: 40px;
 }
 form > button {
-  min-width: 8%;
+  width: 70px;
   line-height: 40px;
   font-size: 20px;
   cursor: pointer;
+}
+.fa {
+  width: 50px;
 }
 
 .memo {
@@ -59,4 +67,13 @@ button.fa.fa-pencil {
 }
 button.fa.fa-trash {
   background-color: rgb(245, 140, 98);
+}
+@media (max-width: 640px) {
+  .memory {
+    flex-direction: column;
+  }
+
+  .memo {
+    min-width: 250px;
+  }
 }
