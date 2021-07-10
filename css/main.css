@@ -49,7 +49,7 @@ form {
   margin-top: 180px;
 }
 
-form.hide {
+header.hide {
   display: none;
 }
 form > input {

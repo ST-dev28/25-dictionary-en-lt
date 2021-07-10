@@ -67,12 +67,16 @@ class Dictionary {
                 </header>`
     }
     generateUpdateForm() {
-        return `<form id="update_word" class="hide">
-                    <input id="upd_enWord" type="text" placeholder="type EN word" required>
-                    <input id="upd_ltWord" type="text" placeholder="type LT word" required>
-                    <button id="update_button" type="submit">Update</button>
-                    <button id="cancel_button" type="reset">Cancel</button>
-                </form>`;
+        return `<header id="update_word">
+                    <h1>Dictionary EN-LT</h1>
+                    <form id="update_word" class="hide">
+                        <input id="upd_enWord" type="text" placeholder="type EN word" required>
+                        <input id="upd_ltWord" type="text" placeholder="type LT word" required>
+                        <button id="update_button" type="submit">Update</button>
+                        <button id="cancel_button" type="reset">Cancel</button>
+                    </form>
+                    <h2>Saved words<br>English - Lithuanian</h2>
+                </header>`;
     }
     generateList() {
         return `<div class="words"></div>`
