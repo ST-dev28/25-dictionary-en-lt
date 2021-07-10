@@ -10,14 +10,24 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
   padding: 10px;
+}
+header {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../img/blured.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 h1,
 h2 {
   width: 100%;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
   font-style: italic;
 }
 form {
@@ -36,6 +46,7 @@ form {
 .words {
   width: 800px;
   max-width: 100%;
+  margin-top: 180px;
 }
 
 form.hide {
@@ -80,6 +91,9 @@ header {
 @media (max-width: 640px) {
   .memory {
     flex-direction: column;
+  }
+  .words {
+    margin-top: 280px;
   }
   .fa {
     width: 35px;

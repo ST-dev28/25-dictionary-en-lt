@@ -55,14 +55,16 @@ class Dictionary {
         return true;
     };
     generateAddForm() {
-        return `<h1>Dictionary EN-LT</h1>
-                <form id="add_word">
-                    <input id="en" type="text" placeholder="type EN word" required value="">
-                    <input id="lt" type="text" placeholder="type LT word" required value="">
-                    <button id="save" type="submit">Save</button>
-                    <button id="reset" type="reset">Reset</button>
-                </form>
-                <h2>Saved words<br>English - Lithuanian</h2>`
+        return `<header>
+                    <h1>Dictionary EN-LT</h1>
+                    <form id="add_word">
+                        <input id="en" type="text" placeholder="type EN word" required value="">
+                        <input id="lt" type="text" placeholder="type LT word" required value="">
+                        <button id="save" type="submit">Save</button>
+                        <button id="reset" type="reset">Reset</button>
+                    </form>
+                    <h2>Saved words<br>English - Lithuanian</h2>
+                </header>`
     }
     generateUpdateForm() {
         return `<form id="update_word" class="hide">
