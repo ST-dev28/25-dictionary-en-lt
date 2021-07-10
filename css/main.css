@@ -22,8 +22,8 @@ h2 {
 }
 form {
   display: flex;
-  /*justify-content: space-between;*/
-  justify-content: left;
+  justify-content: space-between;
+  /*justify-content: left;*/
   flex-wrap: wrap;
   gap: 10px;
   padding: 10px 10px;
@@ -42,7 +42,7 @@ form.hide {
   display: none;
 }
 form > input {
-  width: 40%;
+  width: 37%;
   font-size: 20px;
   line-height: 40px;
   background-color: unset;
@@ -84,6 +84,9 @@ header {
   .fa {
     width: 35px;
     height: 35px;
+  }
+  form {
+    justify-content: left;
   }
   .memo,
   input {
