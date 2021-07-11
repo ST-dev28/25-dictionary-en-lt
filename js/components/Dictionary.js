@@ -67,7 +67,7 @@ class Dictionary {
                 </header>`
     }
     generateUpdateForm() {
-        return `<header id="update_word">
+        return `<header id="update_word" class="hide">
                     <h1>Dictionary EN-LT</h1>
                     <form id="update_word" class="hide">
                         <input id="upd_enWord" type="text" placeholder="type EN word" required>
