@@ -66,9 +66,15 @@ form > button {
   background-color: rgb(250, 218, 178);
 }
 .fa {
-  width: 50px;
+  width: 40px;
+  height: 40px;
 }
-
+.btns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 .memo {
   width: 40%;
   border: 1px solid rgb(131, 131, 131);
@@ -89,21 +95,29 @@ header {
   right: 0;
 }
 @media (max-width: 640px) {
-  .memory {
+  .memo {
     flex-direction: column;
   }
   .words {
     margin-top: 280px;
   }
-  .fa {
-    width: 35px;
-    height: 35px;
-  }
+
   form {
     justify-content: left;
   }
   .memo,
   input {
     min-width: 350px;
+  }
+}
+
+@media (max-width: 420px) {
+  .fa {
+    width: 35px;
+    height: 35px;
+  }
+  .memo,
+  input {
+    min-width: 320px;
   }
 }

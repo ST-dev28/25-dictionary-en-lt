@@ -88,11 +88,13 @@ class Dictionary {
     }
     renderDictionary(id, enWord, ltWord) {
         const HTML = `<form id="memory_${id}"class="memory">
-            <div class="memo" type="text">${enWord}</div>
-            <div class="memo" type="text">${ltWord}</div>
-            <button id="edit" type="button" href="html" class="fa fa-pencil" aria-hidden="true"></button>
-            <button id="delete" type="button" class="fa fa-trash" aria-hidden="true"></button>
-        </form>`
+                        <div class="memo" type="text">${enWord}</div>
+                        <div class="memo" type="text">${ltWord}</div>
+                        <div class="btns">
+                            <button id="edit" type="button" href="html" class="fa fa-pencil" aria-hidden="true"></button>
+                            <button id="delete" type="button" class="fa fa-trash" aria-hidden="true"></button>
+                        </div>
+                    </form>`
 
         this.listDOM.insertAdjacentHTML('afterbegin', HTML)
 
